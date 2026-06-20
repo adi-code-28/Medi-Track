@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-clinical-50 text-slate-800 font-sans antialiased;
+  }
+}
+
+@layer components {
+  .status-strip-normal {
+    @apply border-l-4 border-l-status-normal;
+  }
+  .status-strip-warning {
+    @apply border-l-4 border-l-status-warning;
+  }
+  .status-strip-critical {
+    @apply border-l-4 border-l-status-critical;
+  }
+}
